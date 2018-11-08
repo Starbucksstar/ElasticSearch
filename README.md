@@ -5,22 +5,22 @@
 >注：update数据直接调用添加单条数据或者多条数据接口,确保主键没变即可.
 
 >1.部署相关：
-部署方式：单机单例（单机双例内存暂不够），未来可横向扩展
-ES-head可视化插件请求地址：http://47.93.57.237:9100/
-Es位置：/usr/elasticsearch/elasticsearch-6.4.0-1
-Es-head位置:/usr/elasticsearch/elasticsearch-head
-Es工程位置：/usr/elasticsearch/gtgj-elasticsearch
-2.启动命令
-Es启动命令：./elasticsearch -d (注：es启动不能使用root用户，使用elsearch用户启动，启动完成su root)
-Es-head启动命令：nohup grunt server &
-Es工程启动命令：nohup $JAVA_HOME/bin/java -jar Es-Client-1.0.0.jar -Djava.ext.dirs=$JAVA_HOME/lib >./log/eslog.txt &
-> 注意:[1.每次升级修改pom版本号] [2.删除目录下eslog.txt ]
-Es启动顺序：Es-->Es-head-->Es工程
-3.查找进程命令
-Es服务： ps -ef | grep elasticsearch-6.4.0-1
-Es-head插件：lsof -i:9100
-Es工程：lsof -i:8080
-Kibana:netstat -tunlp|grep 5601
+部署方式：单机单例（单机双例内存暂不够），未来可横向扩展  
+ES-head可视化插件请求地址：http://47.93.57.237:9100/  
+Es位置：/usr/elasticsearch/elasticsearch-6.4.0-1  
+Es-head位置:/usr/elasticsearch/elasticsearch-head  
+Es工程位置：/usr/elasticsearch/gtgj-elasticsearch  
+2.启动命令  
+Es启动命令：./elasticsearch -d (注：es启动不能使用root用户，使用elsearch用户启动，启动完成su root)  
+Es-head启动命令：nohup grunt server &  
+Es工程启动命令：nohup $JAVA_HOME/bin/java -jar Es-Client-1.0.0.jar -Djava.ext.dirs=$JAVA_HOME/lib >./log/eslog.txt &  
+> 注意:[1.每次升级修改pom版本号] [2.删除目录下eslog.txt ]  
+Es启动顺序：Es-->Es-head-->Es工程  
+3.查找进程命令  
+Es服务： ps -ef | grep elasticsearch-6.4.0-1  
+Es-head插件：lsof -i:9100  
+Es工程：lsof -i:8080  
+Kibana:netstat -tunlp|grep 5601  
 
 
 ## ES相关接口文档

@@ -35,7 +35,7 @@
 
 4.如何处理ik分词自定义词典后，历史数据不生效的问题？
 	
-	http://47.93.57.237:9200/social(索引名)/_update_by_query?conflicts=proceed  【post】
+	http://localhost:9200/social(索引名)/_update_by_query?conflicts=proceed  【post】
 	以上命令运行可以更新历史数据分词结果，可以使用通配符*，匹配多个索引 
 
 ------------
