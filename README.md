@@ -6,7 +6,7 @@
 
 >1.部署相关：
 部署方式：单机单例（单机双例内存暂不够），未来可横向扩展  
-ES-head可视化插件请求地址：http://47.93.57.237:9100/  
+ES-head可视化插件请求地址：http://localhost:9100/  
 Es位置：/usr/elasticsearch/elasticsearch-6.4.0-1  
 Es-head位置:/usr/elasticsearch/elasticsearch-head  
 Es工程位置：/usr/elasticsearch/gtgj-elasticsearch  
